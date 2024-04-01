@@ -8,7 +8,7 @@ This project is a web application that displays the current date and time in var
 
 - Displays the current date and time in multiple formats:
   - yyyy-mm-dd
-  - Year, week, day, hour, minute
+  - mm-dd-yyyy-hh-min
   - dd-mm-yyyy
 - Updates in real-time without needing to refresh the page.
 
