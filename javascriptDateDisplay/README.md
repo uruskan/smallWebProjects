@@ -2,8 +2,6 @@
 
 This project is a web application that displays the current date and time in various formats. It was created as part of my full-stack development journey.
 
-![](dateTimeDisplay.png)
-
 ## Features
 
 - Displays the current date and time in multiple formats:
@@ -22,7 +20,7 @@ To view the current date and time, simply open the `index.html` file in your web
 
 ## Screenshots
 
-![DateTime Display](screenshots/datetime-display.png)
+![DateTime Display](dateTimeDisplay.png)
 
 ## Technologies Used
 
