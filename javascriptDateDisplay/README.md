@@ -2,6 +2,8 @@
 
 This project is a web application that displays the current date and time in various formats. It was created as part of my full-stack development journey.
 
+![](dateTimeDisplay.png)
+
 ## Features
 
 - Displays the current date and time in multiple formats:
