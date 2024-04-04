@@ -4,8 +4,8 @@ This repository contains a collection of small training projects completed as pa
 
 ## Projects
 
-- **Date Display**: [Project Name](https://github.com/uruskan/smallWebProjects/tree/main/javascriptDateDisplay) - Simple date display with formatting options and realtime updates.
-- **Football Player Cards App**: [Project Name](https://github.com/uruskan/smallWebProjects/tree/main/footballCardsApp) - Football player cards app.
+- **Date Display**: [javascriptDateDisplay](https://github.com/uruskan/smallWebProjects/tree/main/javascriptDateDisplay) - Simple date display with formatting options and realtime updates.
+- **Football Player Cards App**: [footballCardsApp](https://github.com/uruskan/smallWebProjects/tree/main/footballCardsApp) - Football player cards app.
 
 <!-- - **Project 3**: [Project Name](link-to-project) - Description of the project.
 - **Project 4**: [Project Name](link-to-project) - Description of the project.
