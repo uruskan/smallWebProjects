@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Checker</h1>
+        
+        <div class="controls">
+            <div class="url-input">
+                <textarea id="urlList" rows="10" placeholder="Enter URLs (one per line)">bitcraftonline.com
+alessandro.testing.bitcraftonline.com
+www.newsite.testing.bitcraftonline.com
+cs.bitcraftonline.com
+webdev-test.bitcraftonline.com
+cs.testing.bitcraftonline.com
+testing.bitcraftonline.com
+comms.testing.bitcraftonline.com
+www.qa.bitcraftonline.com
+api.testing.bitcraftonline.com
+qa.bitcraftonline.com
+hub.bitcraftonline.com
+teamcity.testing.bitcraftonline.com
+www.staging.bitcraftonline.com
+audio.testing.bitcraftonline.com
+comms-sandbox.testing.bitcraftonline.com
+www.testing.bitcraftonline.com
+patch-generator.testing.bitcraftonline.com
+api.bitcraftonline.com
+www.bitcraftonline.com
+mathias.testing.bitcraftonline.com
+art.testing.bitcraftonline.com
+www.teamcity.testing.bitcraftonline.com
+launcher.testing.bitcraftonline.com
+launcher.bitcraftonline.com
+morgan.testing.bitcraftonline.com
+grasslands.testing.bitcraftonline.com
+play.bitcraftonline.com
+login.testing.bitcraftonline.com
+cs.backend.testing.bitcraftonline.com
+steve.testing.bitcraftonline.com
+www.login.testing.bitcraftonline.com
+newsite.testing.bitcraftonline.com
+staging.bitcraftonline.com
+patch-generator.bitcraftonline.com</textarea>
+            </div>
+            
+            <div class="methods-selection">
+                <h3>HTTP Methods</h3>
+                <div class="method-checkboxes">
+                    <label><input type="checkbox" value="GET" checked> GET</label>
+                    <label><input type="checkbox" value="POST"> POST</label>
+                    <label><input type="checkbox" value="PUT"> PUT</label>
+                    <label><input type="checkbox" value="DELETE"> DELETE</label>
+                    <label><input type="checkbox" value="HEAD"> HEAD</label>
+                    <label><input type="checkbox" value="OPTIONS"> OPTIONS</label>
+                </div>
+            </div>
+            
+            <div class="protocol-selection">
+                <h3>Protocols</h3>
+                <div class="protocol-checkboxes">
+                    <label><input type="checkbox" value="http" checked> HTTP</label>
+                    <label><input type="checkbox" value="https" checked> HTTPS</label>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="checkButton" class="primary-button">Check URLs</button>
+                <button id="clearButton" class="secondary-button">Clear Results</button>
+                <button id="exportButton" class="secondary-button">Export Results</button>
+            </div>
+        </div>
+        
+        <div class="results-container">
+            <h2>Results</h2>
+            <div class="results-filters">
+                <label>
+                    <input type="checkbox" id="showSuccessful" checked>
+                    Show Successful
+                </label>
+                <label>
+                    <input type="checkbox" id="showFailed" checked>
+                    Show Failed
+                </label>
+                <input type="text" id="searchResults" placeholder="Search results...">
+            </div>
+            <div class="results-table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>URL</th>
+                            <th>Protocol</th>
+                            <th>Method</th>
+                            <th>Status</th>
+                            <th>Time (ms)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                        <!-- Results will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div id="responseModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Response Details</h2>
+                <div class="response-details">
+                    <div class="response-info">
+                        <p><strong>URL:</strong> <span id="modalUrl"></span></p>
+                        <p><strong>Method:</strong> <span id="modalMethod"></span></p>
+                        <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+                        <p><strong>Time:</strong> <span id="modalTime"></span> ms</p>
+                    </div>
+                    <div class="response-headers">
+                        <h3>Headers</h3>
+                        <pre id="modalHeaders"></pre>
+                    </div>
+                    <div class="response-body">
+                        <h3>Body</h3>
+                        <pre id="modalBody"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
